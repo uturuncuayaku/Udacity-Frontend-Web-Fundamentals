@@ -1,0 +1,17 @@
+
+  .posts-about-container{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+
+  }
+
+  article #posts{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+  }
+
+  .about-container{
+    background-color: white;
+    margin-left: 3%;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>My personal blog posts.</title>
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/core.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        <script src="scripts/main.js"></script>        
+    </head>
+    <body>
+        <header>
+
+            <div class="nav-bar">
+                <div class="left-nav-bar">
+                    <a href="index.html" title="Blog">
+                    <i class="fa-brands fa-hive fa-4x"></i> 
+                    </a>  
+                </div>
+                <div class="right-nav-bar">
+                    <div class="nav-buttons">
+                        <button class="nav-bar-home" onclick="window.location.href='index.html'">
+                            Homepage
+                        </button>
+       
+                        <button class="nav-bar-subscribe" onclick="window.location.href='subscribe.html'">
+                            Subscribe
+                        </button>
+                 
+                    </div>
+    
+                    <br>
+                    <div class="search">
+                        <form action="/search" method="get">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="query" placeholder="Type and press Enter" required>
+                        </form>                    
+                    </div>                    
+                </div>
+            </div>
+            
+            <p>>> Welcome to my personal blog page. Software engineering code, algorithm implementations, and personal photos will be here in hopes to give back towards the aspiring developer. </p>
+        </header>
+        <h2>Blogposts.</h2>
+
+    <main>
+        <div class="posts-container">
+            <!-- Post 1 -->
+            <div class="postButton">           
+                <button onclick="minimizeIframe(1)">Post 1</button><br>
+                <iframe id="post-frame1" src="posts/intro.html" frameborder="2"></iframe>
+            </div>
+            <!-- Post 2 -->
+            <div class="postButton">
+                <button onclick="minimizeIframe(2)">Post 2</button><br>
+                <iframe id="post-frame2" src="posts/lorem.html" frameborder="2"></iframe>
+            </div>
+            <!-- Post 3 -->
+            <div class="postButton">
+                <button onclick="minimizeIframe(3)">Post 3</button><br>
+                <iframe id="post-frame3" src="posts/lorem.html" frameborder="2"></iframe>
+            </div>
+            <!-- Post 4 -->
+            <div class="postButton">
+                <button onclick="minimizeIframe(4)">Post 4</button><br>
+                <iframe id="post-frame4" src="posts/lorem.html" frameborder="2"></iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        
+        <div class="container">
+            <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="modal-frame" src="" frameborder="0"></iframe>
+        </div>        
+
+    </footer>
+
+    </body>
+</html>

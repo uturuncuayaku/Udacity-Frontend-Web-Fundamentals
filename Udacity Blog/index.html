@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Blog</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script src="scripts/main_v2.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="left-nav-bar">
+                <a href=index.html" title="Blog">
+                <i class="fa-brands fa-hive fa-4x"></i> 
+                </a>  
+            </div>
+            <div class="right-nav-bar">
+                <div class="nav-buttons">
+                    <button class="nav-bar-home" onclick="window.location.href='index.html'">
+                        Homepage
+                    </button>
+
+                    <button class="nav-bar-subscribe" onclick="window.location.href='subscribe.html'">
+                        Subscribe
+                    </button>                    
+                    
+                    <button class="nav-bar-subscribe" onclick="window.location.href='static/posts.html'">
+                        Posts
+                    </button>
+
+
+                </div>
+
+                <br>
+                <div class="search">
+                    <form action="/search" method="get">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" name="query" placeholder="Type and press Enter" required>
+                    </form>                    
+                </div>                    
+            </div>
+        </div>
+        
+        <br>
+        
+        <p>
+            >> Welcome to my personal blog page. Software engineering code, algorithm implementations, and personal photos will be here in hopes to give back towards the aspiring developer. 
+        </p>
+
+    </header>
+
+    <div class="main"> 
+
+        <div class="post-container">
+
+            <h1>Blog Posts</h1>
+            <div class = "postButton">
+
+                <button onclick="showPost()">
+                    View post
+                </button>
+
+            </div>
+
+            <div id="post-frame1">
+                <iframe id="post-frame" src="posts/intro.html"></iframe>
+            </div>
+
+        </div>     
+
+        <div class="about-container">
+
+            <div class="about">
+
+                    
+                <h3>About</h3>
+                <p>
+                    Udacity's Frontend Web Development Fundamentals Course
+                    Thanks to OneTen/BiT Technology Scholarship Program I'm developing important frontend skills 
+                    and a certificate to hone professional website creation skills within 
+                    the HTML/CSS/Javascript framework and languages.
+                </p>
+
+                <a href="https://www.linkedin.com/in/andres-trujillo-3941b51a1/" 
+                target="_blank" title="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+                </a> 
+                    
+                <a href="https://github.com/uturuncuayaku" 
+                target="_blank" title="GitHub">
+                <i class="fa-brands fa-github-alt fa-3x"></i>
+                </a> 
+
+                <h3>Photo's taken</h3>    
+                <figure>
+                    <img src="images/canaryislands.jpg" alt="morrocan-road">
+                    <figcaption>A beautiful highway of the Canary islands.</figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+
+    </div>        
+
+
+
+
+
+    <h1>Code</h1>
+
+    
+
+    
+    <div class="merge-sort">
+        <h3>Merge Sort Implementation</h3>
+        <p>This is some example code created for a project at SNHU to sort course objects.</p>
+        <blockquote>
+        <pre>
+        <code>
+namespace MySort {
+
+    template<typename RandomAccessIterator>
+    void merge(RandomAccessIterator begin, RandomAccessIterator mid, RandomAccessIterator end) {
+        std::vector<typename RandomAccessIterator::value_type> temp;
+        temp.reserve(std::distance(begin, end));
+
+        RandomAccessIterator left = begin;
+        RandomAccessIterator right = mid;
+
+        while (left < mid && right < end) {
+            if (*left < *right) {
+                temp.push_back(std::move(*left));
+                ++left;
+            }
+            else {
+                temp.push_back(std::move(*right));
+                ++right;
+            }
+        }
+
+        temp.insert(temp.end(), std::make_move_iterator(left), std::make_move_iterator(mid));
+        temp.insert(temp.end(), std::make_move_iterator(right), std::make_move_iterator(end));
+        std::move(temp.begin(), temp.end(), begin);
+
+    }
+
+
+    template<typename RandomAccessIterator>
+    void mergeSort(RandomAccessIterator begin, RandomAccessIterator end) {
+        if (std::distance(begin, end) > 1) {
+            RandomAccessIterator mid = begin + std::distance(begin, end) / 2;
+            mergeSort(begin, mid);
+            mergeSort(mid, end);
+            merge(begin, mid, end);
+        }
+    }
+
+}                            
+        </code>
+        </pre>                    
+        </blockquote>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Modal HTML -->
+    <div id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
+        <iframe id="modal-frame" src="" frameborder="0" title="Modal Content"></iframe>
+    </div>
+</body>
+</html>

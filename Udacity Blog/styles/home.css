@@ -1,0 +1,40 @@
+
+figure {
+    border-width:7px;
+    border-style:solid;
+    padding: 2px;
+    margin: 0;
+    border-radius: 8px;
+    width:fit-content;
+    
+}
+  
+  figcaption {
+    background-color: white;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.merge-sort {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.merge-sort h3 {
+    margin-top: 0;
+}
+
+.merge-sort p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.about h3 {
+    font-style: italic;
+}
+

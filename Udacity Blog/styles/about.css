@@ -1,0 +1,21 @@
+.author{
+    border-style: groove;
+  }
+
+  .author img{
+    max-width:400px;
+    height: auto;
+  }
+  .author ul{
+    border:none;
+    background: none;
+    
+  }
+  .author li{
+    color:black;
+  }
+
+  .social-links a{
+    color:black;
+  }
+

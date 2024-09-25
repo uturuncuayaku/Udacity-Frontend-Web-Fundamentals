@@ -1,0 +1,41 @@
+
+.nav-bar {
+    border-radius: 7px;
+    display:flex;
+    justify-content: space-between;
+    background-color:black;
+    color: #fff;
+    padding: 10px;
+    padding-left: 2;
+    padding-right: 0;
+}
+
+.left-nav-bar i {
+    color: darkolivegreen;
+}
+
+.right-nav-bar {
+    background-color:black;
+    gap: 10px;
+}
+
+.right-nav-bar button {    
+    font-family: monospace; 
+    color:whitesmoke;
+    background-color: black;
+    border: none;
+    padding: 5px;
+
+}
+
+.right-nav-bar button:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.search-container:hover {
+    font:bolder;
+}
+/* END HEADER */

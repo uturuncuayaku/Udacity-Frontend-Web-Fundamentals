@@ -1,0 +1,56 @@
+.card {
+    background-color: bisque;  
+    border-style: groove;
+    border-color:black;
+    margin:10px;
+    
+  }
+  .card img{
+    border-style: groove;
+    border-color:black;
+  }
+  
+  .card-title {
+    display:flex;
+    justify-content: center;
+
+    background-color: bisque;
+    font-family: monospace;
+    font-size: 4em;
+    color: red; 
+    text-shadow: 2px 2px black;
+    text-transform: uppercase; 
+  }
+  
+  .card .caption {
+    font-family: "Times New Roman";
+    font-style: italic;
+    padding: 5px;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 1px;
+    margin: 1px;
+    background: #3C4F65;
+    border-radius: 10px;
+    border:1px solid black;
+  
+  }
+  
+  .card li {
+    color: white; 
+    font-family: "Times New Roman";
+    padding: 4px;
+  }
+  
+  .card .highlight {
+    font-weight: bold;
+    color: white; 
+  }
+  
+  .card-description {
+    font-family: "Georgia";
+    padding: 5px;
+  }
+  

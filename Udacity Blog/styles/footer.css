@@ -1,0 +1,9 @@
+
+footer {
+    display:flex;
+    justify-content: center;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+

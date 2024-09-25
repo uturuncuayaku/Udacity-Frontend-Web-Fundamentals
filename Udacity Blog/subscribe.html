@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <title>Subscribe</title>      
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/subscribe.css">
+        
+    </head>
+    <body>
+        <header>
+
+            <div class="nav-bar">
+                <div class="left-nav-bar">
+                    <a href="index.html" title="Blog">
+                    <i class="fa-brands fa-hive fa-4x"></i> 
+                    </a>  
+                </div>
+                <div class="right-nav-bar">
+                    <div class="nav-buttons">
+                        <button class="nav-bar-home" onclick="window.location.href='index.html'">
+                            Homepage
+                        </button>
+    
+                        <button class="nav-bar-subscribe" onclick="window.location.href='subscribe.html'">
+                            Subscribe
+                        </button>
+              
+                    </div>
+    
+                    <br>
+                    <div class="search">
+                        <form action="/search" method="get">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="query" placeholder="Type and press Enter" required>
+                        </form>                    
+                    </div>                    
+                </div>
+            </div>
+            <br>
+        </header>
+<h3>Subscribe to my blog!</h3><br>
+        
+    <div class="submit-form">
+        <form action="/submit" method="post">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        
+        <div class="container">
+            <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    </body>
+</html>

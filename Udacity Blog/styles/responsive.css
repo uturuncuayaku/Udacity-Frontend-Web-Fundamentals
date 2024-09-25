@@ -1,0 +1,55 @@
+
+@media (max-width: 768px){
+
+    .nav-bar{
+        width:99%;
+    }
+    header p{
+        width:74%;
+    }
+    .main{ 
+        grid-template-columns: 1fr;
+        width:90%;
+    }   
+
+    blockquote{
+        border-left: 14px solid #ccc;
+        padding: 7px;
+        font-style: italic;
+        width: 90%; 
+        word-wrap: break-word;     
+    }
+
+    figure{
+        width: fit-content;
+    }
+}
+
+@media (max-width:500px){
+
+    .about{
+        background-color: white;
+    }
+
+    figure{
+        width:fit-content;
+    }
+} 
+
+@media (max-width: 850px){
+    .about-container{
+      display: none;
+    }
+
+    .posts-about-container{
+        display:initial;
+        background-color: purple;
+    }
+    
+
+    article #posts{        
+        display:flex;
+        flex-wrap: wrap;   
+    }
+
+  }
