@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between cards */
+  background-color: #f0f0f0; /* Example: Light background color for the body */
+}
+
+.card {
+  width: 300px;
+  border: 3px solid #3C4F65;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 8px -8px #3C4F65; /* Example: Box shadow with offset */
+  padding: 0px;
+  background-color: white; /* Example: White background for the card */
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px; /* Example: Rounded corners for the image */
+}
+
+.card-title {
+  font-family: monospace;
+  font-size: 3em;
+  margin-bottom: 0px;
+  color: #E6B9A6; /* Example: Custom text color */
+  text-shadow: 2px 2px red; /* Example: Text shadow */
+  letter-spacing: 4px; /* Example: Letter spacing */
+  text-transform: uppercase; /* Example: Uppercase text */
+}
+
+.caption {
+  font-family: "Times New Roman";
+  font-style: italic;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1px;
+  margin: 1px;
+  background: #3C4F65;
+  border-radius: 10px;
+  border:1px solid black;
+
+}
+
+li {
+  color: white; /* Example: Custom text color */
+  font-family: "Times New Roman";
+  padding: 4px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: white; /* Example: Text color */
+}
+
+.card-description {
+  font-family: "Georgia";
+  padding: 5px;
+}

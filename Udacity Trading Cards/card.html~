@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animal Trading Cards</title>
+  <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+  
+	<div class="card">
+      <h3 class="card-title">Llama</h3>
+      <img src="llamas-standing-by-a-cliff.jpg" alt="Llamas at Machu Pichu">
+	<p class="caption">Llamas are members of the camelid family which means they are closely related to the much larger camel and the smaller vicuñas.</p>
+			<ul class="animal-list">
+				<li><span class="highlight">Scientific Name</span>: Lamini Lama</li>
+				<li><span class="highlight">Height at the shoulder</span>: 47"</li>
+				<li><span class="highlight">Average Lifespan</span>: 20 years</li>
+				<li><span class="highlight">Habitat</span>: Andes Mountains</li>
+			</ul>
+<p class="card-description">Llamas have been the largest domesticated animals in South America before Columbus discovered the Americas. They played a major role in the Andean hunter-gatherer societies that make up the herders and farmers of South America. Used as pack animals and protectors of livestock due to their large size in relation to wolves and coyotes. </p>    
+  </div>
+
+  <div class="card">
+	  <h3 class="card-title">Alpaca</h3>
+	<img src="alpacas.jpg" alt="Llamas at Machu Pichu">
+  <p class="caption">The alpaca is a species of South American camelid mammal these animals are from the Andes of Southern Peru, Western Bolivia, Ecuador and Northern Chile.</p>
+		  <ul class="animal-list">
+			  <li><span class="highlight">Scientific Name</span>: Vicugna pacos</li>
+			  <li><span class="highlight">Height at the shoulder</span>: 32-39"</li>
+			  <li><span class="highlight">Average Lifespan</span>: 15-20 years</li>
+			  <li><span class="highlight">Habitat</span>: Andes Mountains</li>
+		  </ul>
+<p class="card-description">Alpacas are humpless camels, closely related to llamas, and guanacos. They are known for their soft fiber, shorn once or twice a year depending upon its current habitat. There is also a species known as Suri alpaca that have long silky fur that mats into dreadlocks but these pictured above are known as Huacaya. These animals were under my care as a farm hand alongside my father in upstate NY. The animals normally live in mountainous regions at 11,000-16,000 feet above sea level making them characteristically herd animals with long their long necks, short nose, erect ears and soft wool they are built to see across the plains for natural predators like coyotes and wolves.</p>
+	
+</div>
+<div class="card">
+<h3 class="card-title">Merge Sort</h3>
+<img src="C:\Users\andtr\OneDrive\Documents\Udacity Blog\images\Merge_sort_algorithm_diagram.jpg" alt="diagram merge sort">
+<p class="caption">Average runtime complexity: &theta; (n log(n)) </p>
+	  <ul class="animal-list">
+		  <li><span class="highlight">Worst-case performance</span>: O(nlog(n))</li>
+		  <li><span class="highlight">Best-Case performace</span>: &Omega;(n log(n)) </li>
+		  <li><span class="highlight">Worst-case space complexity</span>: O(n) </li>
+	  </ul>
+<p class="card-description"> In computer science, merge sort (also commonly 
+	spelled as mergesort and as merge-sort) is an efficient, general-purpose,
+	 and comparison-based sorting algorithm. Most implementations produce a stable
+	  sort, which means that the relative order of equal elements is the same in the
+	   input and output. Merge sort is a divide-and-conquer algorithm that was
+	    invented by John von Neumann in 1945. A detailed description and analysis
+		 of bottom-up merge sort appeared in a report by Goldstine and von Neumann as
+		  early as 1948.</p>
+
+</div>
+
+  
+</body>
+</html>
